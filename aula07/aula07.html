@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aula 07</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="aula07.js"></script>
+</head>
+<body>
+
+    <hr><h1>Cálculadora</h1>
+     
+        <table border=4>
+            <tr>
+                <td align="center">
+                    <input type="text" id="visor" name="visor" size="20" class="visor">
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="submit" class="botao" value="  1  " onClick="preencher(1)">
+                    <input type="submit" class="botao" value="  2  " onClick="preencher(2)">
+                    <input type="submit" class="botao" value="  3  " onClick="preencher(3)">
+                    <input type="submit" class="botao" value="  /  " onClick="preencher('/')"><br><br>
+
+                    <input type="submit" class="botao" value="  4  " onClick="preencher(4)">
+                    <input type="submit" class="botao" value="  5  " onClick="preencher(5)">
+                    <input type="submit" class="botao" value="  6  " onClick="preencher(6)">
+                    <input type="submit" class="botao" value="  *  " onClick="preencher('*')"><br><br>
+
+                    <input type="submit" class="botao" value="  7  " onClick="preencher(7)">
+                    <input type="submit" class="botao" value="  8  " onClick="preencher(8)">
+                    <input type="submit" class="botao" value="  9  " onClick="preencher(9)">
+                    <input type="submit" class="botao" value="  +  " onClick="preencher('+')"><br><br>
+
+                    <input type="submit" class="botao" value="  0  " onClick="preencher(0)">
+                    <input type="submit" class="botao" value="  C  " onClick="limpar()">
+                    <input type="submit" class="botao" value="  =  " onClick="calcular('=')">
+                    <input type="submit" class="botao" value="  -  " onClick="preencher('-')">
+                </td>
+            </tr>
+        </table>
+    <br><hr><br>
+
+    <form><fieldset><legend>Cálculo do IMC</legend>
+
+    <!--Gênero: <input type="radio" name="gender" value="m"> Homem
+    <input type="radio" name="gender" value="f"> Mulher<br>-->
+
+    Quilos: <input type="text" id="peso" class="peso" onClick="enviar()"><br>
+
+    Altura: <input type="text" id="altura" class="altura" onClick="enviar()"><br>
+
+    <input type="button" class="botao" value="Calcular" onClick="enviar()"><br>
+
+    IMC: <input type="text" id="imc" disabled=disabled onClick="enviar()"><br><br>
+
+    <img src="tabela.jpg" width="80%"> 
+
+    </fieldset></form><br><hr>
+</body>
+</html>
