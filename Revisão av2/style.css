@@ -1,0 +1,22 @@
+body {
+    background:black;
+    color:red;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    font-weight: bold;
+}
+
+table {
+    background: #a51d1d;;
+    color: black;
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+    
+}
+
+td {
+    margin:auto;
+}
